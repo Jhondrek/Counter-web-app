@@ -69,7 +69,7 @@ body {
     width: 95%;
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
 
     .score-container {
         width: 40%;
@@ -88,4 +88,4 @@ body {
 
     }
 
-}
+} */
