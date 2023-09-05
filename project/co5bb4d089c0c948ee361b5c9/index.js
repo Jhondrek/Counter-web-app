@@ -1,7 +1,9 @@
 //Score variables
+let homeCurrentScore = parseInt(document.getElementById("home-score").innerText)
+let guestCurrentScore = parseInt(document.getElementById("guest-score").innerText)
 let homeScore = document.getElementById("home-score")
-let guestScore = document.getElementById("guest-Score")
-let homeCurrentScore = parseInt(document.getElementById("home-score").innerText) 
+let guestScore = document.getElementById("guest-score")
+
 //home button variables
 let homeBtnPlusOne = document.getElementById("home-btn-plusOne")
 let homeBtnPlusTwo = document.getElementById("home-btn-plusTwo")
@@ -12,18 +14,46 @@ let guestBtnPlusOne = document.getElementById("guest-btn-plusOne")
 let guestBtnPlustwo = document.getElementById("guest-btn-plusTwo")
 let guestBtnPlusthree = document.getElementById("guest-btn-plusThree")
 
-function addOnePointHome(){
-    homeCurrentScore +=1;
+function addOnePointHome() {
+    homeCurrentScore += 1;
     homeScore.innerText = homeCurrentScore
 }
 
-function addtwoPointsHome(){
-    homeCurrentScore +=2;
+function addTwoPointsHome() {
+    homeCurrentScore += 2;
     homeScore.innerText = homeCurrentScore
 }
 
-function addthreePointsHome(){
-    homeCurrentScore +=3;
+function addThreePointsHome() {
+    homeCurrentScore += 3;
     homeScore.innerText = homeCurrentScore
 }
 
+//Guest functions
+
+function addOnePointGuest() {
+    guestCurrentScore += 1
+    guestScore.innerText = guestCurrentScore
+}
+
+function addTwoPointGuest() {
+    guestCurrentScore += 2;
+    guestScore.innerText = guestCurrentScore
+}
+
+function addThreePointGuest() {
+    guestCurrentScore += 3;
+    guestScore.innerText = guestCurrentScore
+}
+
+//resets
+
+function resetHome() {
+    homeScore.innerText = 0
+    homeCurrentScore = 0
+}
+
+function resetGuest() {
+    guestScore.innerText = 0
+    guestCurrentScore = 0
+}

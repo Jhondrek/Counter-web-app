@@ -1,46 +1,55 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <!-- 
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 
             START HOME CONTAINER
              -->
-            <div class="score-container">
-                <h3 >HOME</h3>
-                <p id="home-score">12</p>   
-                
-                <div class="score-btn-Container">
-                    
-                    <button class="btm" id="home-btn-plusOne" onclick="addOnePointHome()">+1</button>
-                    <button class="btm" id="home-btn-plusTwo" onclick="addtwoPointsHome()">+2</button>
-                    <button class="btm" id="home-btn-plusThree" onclick="addthreePointsHome()">+3</button>
+        <div class="score-container">
+            <h3>HOME</h3>
+            <p id="home-score">12</p>
+
+            <div class="score-btn-Container">
+
+                <button class="btm" id="home-btn-plusOne" onclick="addOnePointHome()">+1</button>
+                <button class="btm" id="home-btn-plusTwo" onclick="addTwoPointsHome()">+2</button>
+                <button class="btm" id="home-btn-plusThree" onclick="addThreePointsHome()">+3</button>
 
 
-                </div>
-                
             </div>
-            <!-- **END HOME CONTAINER** -->
 
-            <!-- 
+            <button class="btn btn-reset" id="reset-home" onclick="resetHome()">Reset Score</button>
+
+        </div>
+        <!-- **END HOME CONTAINER** -->
+
+        <!-- 
             START GUEST CONTAINER
              -->
-            <div class="score-container">
-                <h3>GUEST</h3>
-                <p id="guest-Score">5</p>
-                
-                <div class="score-btn-Container">
-                    <button class="btm" id="guest-btn-plusOne">+1</button>
-                    <button class="btm" id="guest-btn-plusTwo">+2</button>
-                    <button class="btm" id="guest-btn-plusThree">+3</button>
-                </div>
-                
-            </div>
-            <!-- **END HOME CONTAINER** -->
+        <div class="score-container">
+            <h3>GUEST</h3>
+            <p id="guest-score">1</p>
 
-            
+            <div class="score-btn-Container">
+                <button class="btm" id="guest-btn-plusOne" onclick="addOnePointGuest()">+1</button>
+                <button class="btm" id="guest-btn-plusTwo" onclick="addTwoPointGuest()">+2</button>
+                <button class=" btm" id="guest-btn-plusThree" onclick="addThreePointGuest()">+3</button>
+            </div>
+
+            <button class="btn btn-reset" id="reset-guest" onclick="resetGuest()">Reset Score</button>
+
+
         </div>
-        <script src="index.js"></script>
-    </body>
+        <!-- **END HOME CONTAINER** -->
+
+
+    </div>
+    <script src=" index.js"></script>
+</body>
+
 </html>
